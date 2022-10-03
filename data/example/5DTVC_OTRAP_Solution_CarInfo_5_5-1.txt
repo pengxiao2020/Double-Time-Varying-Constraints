@@ -1,0 +1,34 @@
+SeqNum	Car_Id(Type)	AT	DT	ET	TaskResourceDemand	Bid(coefficient)	ConnectToECS(type)	BeAllocatedTime	Connectivity	Payment
+1	12(L)		39	51	6	[13,4,17,110]		6776.95(3.64)	2(S)		39		1		3.9447e-07
+2	16(L)		39	57	6	[12,4,27,93]		1040.89(0.56)	11(S)		39		1		4.84702e-07
+3	13(L)		40	64	4	[9,4,17,97]			475.042(0.44)	5(S)		40		1		4.42417e-07
+4	11(L)		41	65	8	[14,2,26,100]		7031.76(3.53)	4(S)		41		1		4.09302e-07
+5	17(L)		42	70	4	[11,2,26,83]		262.188(0.3)	4(S)		42		1		4.88363e-07
+6	9(S)		43	47	2	[4,1,12,56]			140.52(0.75)	12(S)		43		1		2.61739e-07
+7	4(S)		46	58	2	[7,1,13,64]			804.485(3.22)	13(S)		46		1		3.74618e-07
+8	1(S)		59	67	1	[5,1,14,52]			282.901(2.68)	13(S)		59		1		2.63472e-07
+9	8(S)		62	64	1	[4,2,8,63]			114.303(0.88)	1(S)		62		1		4.25812e-07
+10	10(S)		67	70	3	[4,2,10,37]			393.33(1)	3(S)		67		1		3.66317e-07
+
+1.社会福利: SocialWelfare_max = 17322.4
+
+2.算法运行时间: RunTime = 411 ms
+(1)DTVC_OTRAP 准备工作运行时间：PreWork_RunTime = 15 ms
+其中，删除过期任务所花时间：DelOvertimeTask_RunTime = 0 ms
+其中，添加新到达车辆所花时间：AddArrivedCar_RunTime = 14 ms
+(2)DTVC_OTRAP 分配函数运行时间：ALLOC_RunTime = 8 ms
+(3)DTVC_OTRAP 支付函数运行时间：PAY_RunTime = 387 ms
+
+3.资源利用率: Resource Utilization 
+(1)总CPU利用率: TRU_cpu = 0.00601563
+(2)总GPU利用率: TRU_gpu = 0.0063125
+(3)总Memory利用率: TRU_memory = 0.00582812
+(4)总Disk利用率: TRU_disk = 0.006675
+
+4.服务车辆数(比例): T_ServedCarNum(T_ServedCarRatio) = 10(1)
+其中，小型车辆任务服务数(比例): S_ServedCarNum(S_ServedCarRatio) = 5(0.5)
+其中，大型车辆任务服务数(比例): L_ServedCarNum(L_ServedCarRatio) = 5(0.5)
+
+5.正常付款的获胜车辆数(比例): T_NormalPayedCarNum(T_NormalPayedCarRatio) = 0(0)
+其中，小型获胜车辆正常付款数(比例): S_NormalPayedCarNum(S_NormalPayedCarRatio) = 0(0)
+其中，大型获胜车辆正常付款数(比例): L_NormalPayedCarNum(L_NormalPayedCarRatio) = 0(0)
